@@ -14,10 +14,10 @@ console.log(i)
 
 // 03 - crie uma função que exiba uma mensagem no console
 
-function exibirMensagemNoConsole(){
-    console.log("Exibir mensagem no console")
+function exibirMensagemNoConsole(nome){
+    console.log(`Olá sou o ${nome}`)
 }
-exibirMensagemNoConsole()
+exibirMensagemNoConsole("João Pedro")
 
 // 04 - crie uma função que receba o seu nome como (parâmetro) e exiba no console
 
@@ -53,7 +53,7 @@ triploNumero(5)
 
 
 function verificarVariavel(){
-    let verificar = false 
+    let verificar = true 
     if(verificar == true){
         console.log("essa variavel é true")
     }else{
@@ -118,10 +118,11 @@ console.log(objeto)
 
 
 // 16 - Adicione uma nova propriedade sem alterar seu objeto inicial.
+// objeto.profissao = "Front-end" => outra forma de inserir objeto
 objeto["gostoFilmes"] = "Ação"
 
 // 17 - Remova uma propriedade desse objeto.
-delete objeto.gostoFilmes
+ delete objeto.gostoFilmes
 
 
 // 18 - Mostre no console todas as propriedades desse objeto.
@@ -138,31 +139,31 @@ let cadastro = [
     {
         nome: "Bruno",
         idade: 19,
-        telefone: 21999999999,
+        telefone: "(21) 9 9999-9999",
         amigos: ["Andre", "Pedro", "Ricardo", "felipe"]
     },
     {
         nome: "Dionatan",
         idade: 17,
-        telefone: 21988888888,
+        telefone: "(21) 9 8888-8888",
         amigos: ["Renato", "Lucas", "José", "Enzo"]
     },
     {
         nome: "Robério",
         idade: 13,
-        telefone: 21977777777,
+        telefone: "(21) 9 7777-7777",
         amigos: ["Anderson", "Marco", "Fernando", "Igor"]
     },
     {
         nome: "Airon",
         idade: 28,
-        telefone: 21966666666,
+        telefone: "(21) 9 6666-6666",
         amigos: ["Matheus", "Guilherme", "Gabriel", "Nathalia"]
     },
     {
         nome: "Messi",
         idade: 30,
-        telefone: 21955555555,
+        telefone: "(21) 9 5555-5555",
         amigos: ["Evelyn", "Terezinha", "Leonardo", "Pablo"]
     }
 ]
@@ -175,7 +176,7 @@ console.log(cadastro[2].amigos[2])
 console.log(cadastro[3].amigos[1])
 console.log(cadastro[4].amigos[3])
 
-
+// console.log(`Um dos amigos de ${cadastro[0].nome} é o ${cadastro[0].amigos[0]}`) forma template string para chamar o amigo 
 
 
 
